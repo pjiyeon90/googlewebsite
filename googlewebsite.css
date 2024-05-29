@@ -1,0 +1,117 @@
+:root{
+    --fontcolor-gray:#202124;
+    --button-font: #3c4043;
+    --button-color: #f8f9fa;
+    --button-border: #f8f9fa;
+    --footer-line: #dadce0;
+    --footer-backcolor: #f2f2f2;
+    --input-boxcolor: #dfe1e5;
+    --icon-color: #9aa0a6;
+}
+body{
+    display: contents; /*컨테이너의 기능이 사라짐, 감싸는 속성 사라지며 각각의 요소로 작용?*/
+}
+
+a{
+    text-decoration-line: none;
+    color: var(--fontcolor-gray);
+    margin-right: 10px;
+}
+i{  margin-left: 10px;
+    cursor: pointer;
+    
+}
+.fa-bars:hover{
+    background-color: rgba(60,64,67,.08);
+    padding: 8px;
+    border-radius: 100px;
+}
+a:hover{
+    text-decoration-line: underline;
+}
+.nav_bar{
+    margin: 20px 30px;
+}
+.nav_left{
+    float: left;
+}
+.nav_right{
+    float: right;
+}
+.main{
+    margin-top: 220px;
+    text-align: center;
+}
+
+
+.input_area{
+    margin-top: 20px;
+}
+.input_area > input:focus{
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    /* border-color: transparent; */
+    /* background: transparent;
+    border: none; */
+}
+.input_area > input{
+    width: 500px;
+    height: 40px;
+    border-radius: 24px;
+    border: 1px solid var(--input-boxcolor);
+    padding: 0 50px;
+
+}
+.fa-magnifying-glass{
+    position: relative;
+    right: -40px;
+    bottom: -2.5px;
+    color: var(--icon-color);
+}
+.fa-microphone{
+    position: relative;
+    color: var(--icon-color);
+    left: -45px;
+    bottom: -2px;
+}
+
+.button_area{
+    padding-top:18px;
+}
+.button_area > button{
+ height: 36px;
+ background-color: var(--button-color);
+ border: 1px solid var(--button-border);
+ border-radius: 5px;
+ color: var(--button-font);
+ font-family: 'arial',sans-serif;
+ padding:0 16px;
+ margin: 11px 0;
+}
+.button_area > button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;  
+}
+.language-zone > a{
+    color: blue;
+}
+.language-zone > a:first-child{
+   margin-left: 10px;
+}
+
+
+footer{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    font-size: 14px;
+}
+.first{font-size: 15px;}
+.line{
+    padding: 15px 30px;
+    background-color: var(--footer-backcolor);
+    border-bottom: 1px solid var(--footer-line);
+}
+
+.second-row > span:last-child{
+    float: right;
+}
